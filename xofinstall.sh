@@ -96,7 +96,7 @@ service validator stop
 #подготавливаем mytonctrl для работы в testnet
 echo -e "${COLOR}[6/7]${ENDC} Perenastroyka validatora dlya raboti v testnet"
 cd /usr/bin/ton/
-wget https://github.com/newton-blockchain/newton-blockchain.github.io/blob/master/testnet-global.config.json
+wget https://ton-blockchain.github.io/testnet-global.config.json
 mv global.config.json mainnet-global.config.json
 mv testnet-global.config.json global.config.json
 
