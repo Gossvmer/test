@@ -106,6 +106,7 @@ mkdir db
 cp -r /var/ton-work/mainnet-db/config.json /var/ton-work/mainnet-db/config.json.backup /var/ton-work/mainnet-db/keyring /var/ton-work/db/
 cd db
 wget https://dump.ton.org/dumps/latest_testnet.tar.lz
+echo -e "${COLOR}[6.5/8]${ENDC} Raspakovka arhiva"
 plzip -cd latest_testnet.tar.lz | tar -xf -
 cd ..
 #запускаем валидатора
